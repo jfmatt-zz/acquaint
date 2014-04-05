@@ -26,8 +26,16 @@
   <button onclick="askForWritePerm()">Write Permissions</button> 
   <button onclick="facebookWallPost()">Wall Post</button> 
   <button onclick="logout()">Logout</button>
-  <button style="height:100px; width:100px;" id="share">Share</button>
-  <button id="unshare">Unshare</button>
+  <button onclick="nfc.share(
+    [ndef.textRecord('hi james!')], 
+    function() {
+      navigator.notification.vibrate(100);
+      alert('success!')
+    }, 
+    function(error) {
+      alert(error);
+    });" style="height:100px; width:100px;" id="share">Share</button>
+  <button onclick="console.log(message);" id="unshare">Unshare</button>
 
   <div id="data"></div>
 

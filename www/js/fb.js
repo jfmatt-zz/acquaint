@@ -1,6 +1,6 @@
 FB.Event.subscribe('auth.login', function(response) {
-        console.log('login event:' + JSON.stringify(response));
-    });
+  console.log('login event:' + JSON.stringify(response));
+});
 
     function me() {
 

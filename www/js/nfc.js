@@ -1,8 +1,8 @@
 var message = [
-  ndef.textRecord("hi james!");
+  ndef.textRecord("hi james!")
 ];
-
-var nfcShare = function() {
+/*
+$("#share").click(function() {
   console.log('hi');
   nfc.share(
     message, 
@@ -12,25 +12,16 @@ var nfcShare = function() {
     }, 
     function(error) {
       alert(error);
-  });
-};
-
-var nfcUnshare = function() {
-    nfc.unshare(
-      function(){
-        alert("unshared");
-      },
-      function(error){
-        alert(error)
     });
-};
-
-$("#share").click(function() {
-  console.log('hi');
-  nfcShare();
 });
 
 $("#unshare").click(function() {
   alert("hi");
-  nfcUnshare();
-});
+  nfc.unshare(
+    function(){
+      alert("unshared");
+    },
+    function(error){
+      alert(error)
+  });
+});*/
