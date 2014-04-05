@@ -3,7 +3,7 @@ var message = [
 ];
 
 var nfcShare = function() {
-  alert('hi');
+  console.log('hi');
   nfc.share(
     message, 
     function() {
@@ -25,10 +25,12 @@ var nfcUnshare = function() {
     });
 };
 
-$("#share").on("click", function() {
+$("#share").click(function() {
+  console.log('hi');
   nfcShare();
 });
 
-$("#unshare").on("click", function() {
+$("#unshare").click(function() {
+  alert("hi");
   nfcUnshare();
 });
