@@ -17,12 +17,12 @@
        under the License.
  */
 
-package com.sample.PhonegapFacebookTest;
+package edu.american.acquaint;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class PhonegapFacebookTest extends DroidGap
+public class Acquaint extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
