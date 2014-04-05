@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< Updated upstream
   <head>
 
     <style>
@@ -153,4 +154,41 @@
 
 
   </body>
+=======
+<head>
+  <style>
+    #login-facebook {
+      display: block;
+      width: 400px;
+      height: 76px;
+      margin: 320px 0 0 420px;
+      background: url(img/button-facebook.png);
+      }
+  </style>
+  <script src="lib/jquery-1.9.1.min.js"></script>
+  <!-- cordova -->
+  <script src="cordova.js"></script>
+  <!-- cordova facebook plugin -->
+  <script src="cdv-plugin-fb-connect.js"></script>
+  <!-- facebook js sdk -->
+  <script src="facebook-js-sdk.js"></script>
+  <script src="js/fb.js"></script>
+  <script src="js/nfc.js"></script>
+</head>
+<body>
+  
+  <button onclick="login()">Login</button>
+  <button onclick="askForWritePerm()">Write Permissions</button> 
+  <button onclick="facebookWallPost()">Wall Post</button> 
+  <button onclick="logout()">Logout</button>
+  <button id="share">Share</button>
+  <button id="unshare">Unshare</button>
+
+  <div id="data"></div>
+
+  <div id="fb-root"></div>
+        
+  <div id="log"></div>
+</body>
+>>>>>>> Stashed changes
 </html>

@@ -2,5 +2,6 @@
 .*~
 
 *.class
-
 platforms/android/bin
+platforms/android/gen/R.java.d
+platforms/android/local.properties

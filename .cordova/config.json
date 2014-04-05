@@ -1,1 +1,11 @@
-{"lib":{"www":{"id":"phonegap","version":"3.0.0","uri":"https://github.com/jfmatt/acquaint.git"}},"id":"edu.american.acquaint","name":"Acquaint"}
+{
+    "lib": {
+        "www": {
+            "id": "phonegap",
+            "version": "3.0.0",
+            "uri": "https://github.com/jfmatt/acquaint.git"
+        }
+    },
+    "id": "edu.american.acquaint",
+    "name": "Acquaint"
+}
