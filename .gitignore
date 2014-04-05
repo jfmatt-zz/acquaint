@@ -2,3 +2,5 @@
 .*~
 
 *.class
+
+platforms/android/bin

@@ -26,6 +26,7 @@
     <button onclick="login()">Login</button>
     <button onclick="askForWritePerm()">Write Permissions</button> 
     <button onclick="facebookWallPost()">Wall Post</button> 
+    <button onclick="friendLouis()">Add Friend</button> 
     <button onclick="logout()">Logout</button>
 
 <!--         <a href="#" id="login-facebook" onclick="login()"></a> -->
@@ -46,6 +47,13 @@
                 console.log('login event:' + JSON.stringify(response));
             });
 
+						function friendLouis () {
+							FB.ui({
+  							method: 'friends',
+  							id: 'louis.fettet'
+							}, function(response){});
+						}
+						
             function me() {
 
                   FB.api('/me?fields=picture,name,email', function(user) {
